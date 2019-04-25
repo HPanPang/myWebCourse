@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "_StudentLayout";
+    ViewData["Title"] = "选课界面";
+    var student = Model;
+    ViewData["StudentName"] = student.StuName;
+    ViewData["StuId"] = student.StuId;
+}
+
+<div class="alert alert-primary text-center">
+    现在是 @DateTime.Now 不能选该类课程！！
+</div>

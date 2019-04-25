@@ -1,0 +1,111 @@
+﻿@{
+    Layout = "_StudentLayout";
+    ViewData["Title"] = "个人信息";
+    var student = Model;
+    if (ViewData["StudentName"] == null) {ViewData["StudentName"] = student.StuName;}
+    ViewData["StuId"]=student.StuId;
+}
+
+<div class="row">
+    <div class="col-lg-12 responsive-md-100">
+        <div class="card card-outline-primary">
+            <div class="card-header">
+                <h4 class="m-b-0 text-white">个人信息</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-body">
+                        <h3 class="box-title m-t-15">学生基本信息</h3>
+                        <hr class="m-t-0 m-b-40">
+                        <div class="row p-t-20">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">姓名</label>
+                                    <span type="text" id="Name" class="form-control form-control-label">@student.StuName</span>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">学号</label>
+                                    <span type="text" id="StuId" class="form-control form-control-danger"> @student.StuId</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">当前已获学分</label>
+                                    <span type="text" id="credit" class="form-control form-control-danger"> @student.StuCrdit</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">学院</label>
+                                    <span type="text" id="xueyuan" class="form-control form-control-danger">@student.Xueyuan</span>
+                                </div>
+                            </div>
+
+
+                            <!--/span-->
+                        </div>
+                        <h3 class="box-title">其他信息</h3>
+                        <hr class="m-t-0 m-b-40">
+                        <!--/row-->
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">民族</label>
+                                    <span type="text" id="mingzu" class="form-control form-control-danger">@student.Mingzu</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">性别</label>
+                                    <span type="text" id="sex" class="form-control form-control-danger">@student.Sex</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">出生地</label>
+                                    <span type="text" id="lastName" class="form-control form-control-danger">@student.Chushengdi</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">联系电话</label>
+                                    <span type="text" id="lastName" class="form-control form-control-danger">@student.Shoujihaoma</span>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">身份证</label>
+                                    <span type="text" id="lastName" class="form-control form-control-danger">@student.Shengfenzheng</span>
+                                </div>
+                            </div>
+
+                            <!--/span-->
+                        </div>
+                        <h3 class="box-title">时间信息</h3>
+                        <hr class="m-t-0 m-b-40">
+                        <!--/row-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">注册日期</label>
+                                    <span type="text" id="lastName" class="form-control form-control-danger">@student.CreateTime</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">最近更新信息日期</label>
+                                    <span type="text" id="lastName" class="form-control form-control-danger">@student.UpdateTime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseWeb_Ui", "web_courescontrol\CourseWeb_Ui.csproj", "{F2371A30-9BC0-4DE1-AE18-B008C0802102}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseDomain", "CourseDomain\CourseDomain.csproj", "{6AC9B068-E27E-4925-9560-E9013B1FD56C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2371A30-9BC0-4DE1-AE18-B008C0802102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2371A30-9BC0-4DE1-AE18-B008C0802102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2371A30-9BC0-4DE1-AE18-B008C0802102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2371A30-9BC0-4DE1-AE18-B008C0802102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC9B068-E27E-4925-9560-E9013B1FD56C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC9B068-E27E-4925-9560-E9013B1FD56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC9B068-E27E-4925-9560-E9013B1FD56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC9B068-E27E-4925-9560-E9013B1FD56C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBA18B36-D09A-4C75-A0E4-E2587FA17E73}
+	EndGlobalSection
+EndGlobal

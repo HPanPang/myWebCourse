@@ -1,0 +1,103 @@
+﻿@{
+    Layout = "_StudentLayout";
+    ViewData["Title"] = "更新个人信息";
+    var student = Model;
+    if (ViewData["StudentName"] == null) { ViewData["StudentName"] = student.StuName; }
+    ViewData["StuId"]=student.StuId;
+
+}
+
+    <div class="row">
+        <div class="col-lg-12 responsive-md-100">
+            <div class="card card-outline-info">
+                <div class="card-header">
+                    <h4 class="m-b-0 text-white">修改信息</h4>
+                </div>
+                <div class="card-body">
+                    <form action='@Url.Action("UpdateNow")' class="form-horizontal" method="post">
+                        <div class="form-body">
+                            <hr>
+                            <div class="row p-t-20">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">姓名</label>
+                                        <input type="text" name="xinming" class="form-control" placeholder="@student.StuName">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">学号</label>
+                                        <input type="text" name="xuehao" class="form-control" value="@student.StuId" readonly="readonly" onClick="{this.value='@student.StuId'}"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">学院</label>
+                                        <input type="text" name="xueyuan" class="form-control form-control-danger" placeholder="@student.Xueyuan">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">民族</label>
+                                        <input type="text" name="mingzu" class="form-control form-control-danger" placeholder="@student.Mingzu">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">性别</label>
+                                        <input type="text" name="sex" class="form-control form-control-danger" placeholder="@student.Sex">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">出生地</label>
+                                        <input type="text" name="chushengdi" class="form-control form-control-danger" placeholder="@student.Chushengdi">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">联系电话</label>
+                                        <input type="text" name="lianxidianhua" class="form-control form-control-danger" placeholder="@student.Shoujihaoma">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">身份证</label>
+                                        <input type="text" name="shengfenzheng" class="form-control form-control-danger" placeholder="@student.Shengfenzheng">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">注册日期</label>
+                                        <span type="text" name="zhuceriqi" class="form-control form-control-danger">@student.CreateTime</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">最近更新信息日期</label>
+                                        <span type="text" name="xiugairiqi" class="form-control form-control-danger">@student.UpdateTime</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-offset-12 col-md-12">
+                                            <button type="submit" class="btn btn-success">提交修改</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"> </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

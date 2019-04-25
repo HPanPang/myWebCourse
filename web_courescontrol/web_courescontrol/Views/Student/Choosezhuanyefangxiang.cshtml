@@ -1,0 +1,87 @@
+﻿@{
+    Layout = "_StudentLayout";
+    ViewData["Title"] = "个人课程查询";
+    var student = Model;
+    ViewData["StudentName"] = student[0].StuName;
+    ViewData["StuId"] = student[0].id;
+    var type = 2580;
+}
+
+<div class="container-fluid">
+    <!-- Start Page Content -->
+    <div class="row">
+        <div class="col-12">
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">专业方向课程</h4>
+                    <div class="table-responsive m-t-40">
+
+                        <table id="myTable" class="table table-bordered table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th>课程代码</th>
+                                    <th>课程名称</th>
+                                    <th>课程学分</th>
+                                    <th>操作类型</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    if (student.Count >= 0)
+                                    {
+                                        for (int i = 1; i < student.Count; i++)
+                                        {
+                                            <tr role="row" class="odd">
+                                                <td id="code">@student[i].CourseCode</td>
+                                                <td>@student[i].CourseName</td>
+                                                <td>@student[i].CourseCredit</td>
+                                                @if (@student[i].CourseScore == -1)
+                                                {
+                                                    <td><button type="button" class="btn btn-primary btn-rounded m-b-10 m-l-5" onclick="choose(@student[i].CourseCode)">选择当前</button></td>}
+                                                @if (@student[i].CourseScore == -2)
+                                                {
+                                                    <td><button type="button" class="btn btn-info btn-rounded m-b-1 m-l-1">当前在学</button><button type="button" class="btn btn-danger btn-rounded m-b-1 m-l-1" onclick="back(@student[i].CourseCode)">退选当前</button></td>}
+                                                @if (@student[i].CourseScore >= 60)
+                                                {
+                                                    <td><button type="button" class="btn btn-success btn-rounded m-b-10 m-l-5">已经通过</button></td>}
+                                                @if (@student[i].CourseScore < 60 && @student[i].CourseScore >= 0)
+                                                {
+                                                    <td><button type="button" class="btn btn-warning btn-rounded m-b-10 m-l-5">重修选课</button></td>
+                                                }
+                                            </tr>
+                                        }
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/js/lib/datatables/datatables.min.js"></script>
+    <script src="~/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="~/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="~/js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="~/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="~/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="~/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="~/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <script src="~/js/lib/datatables/datatables-init.js"></script>
+    <script>
+    function choose(code) {
+
+            location.href = '@Url.Action("SelectCourse")'+"/?code=" + code+ "&type=" + @type +"&id=" + @ViewData["StuId"];
+        }
+    </script>
+    <script>
+        function back(code) {
+            location.href = '@Url.Action("TuiXuan")'+"/?code=" + code + "&type=" + @type+"&id=" + @ViewData["StuId"];
+        }
+    </script>
+}

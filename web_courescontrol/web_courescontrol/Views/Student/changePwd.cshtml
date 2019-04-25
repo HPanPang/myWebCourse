@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "_StudentLayout";
+    ViewData["Title"] = "修改密码";
+    var student = Model;
+    ViewData["StudentName"] = student.StuName;
+    ViewData["StuId"] = student.StuId;
+}
+<!-- Main wrapper  -->
+@if (@ViewBag.type == 1)
+{
+    <div class="alert alert-primary text-center">
+        修改成功！
+    </div>
+}
+@if (@ViewBag.type == 2)
+{
+    <div class="alert alert-danger text-center">
+        修改失败！可能是原始密码输入错误~
+    </div>
+}
+<div id="main-wrapper">
+    <div class="unix-login">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="login-content card">
+                        <div class="login-form">
+                            <h4>修改密码</h4>
+                            <form action='@Url.Action("JudgePwd")' method="post">
+                                <div class="form-group">
+                                    <label>用户学号</label>
+                                    <input name="id" type="text" class="form-control" value="@ViewData["StuId"]" readonly="readonly" onClick="{this.value='@student.StuId'}">
+                                </div>
+                                <div class="form-group">
+                                    <label>原始密码</label>
+                                    <input name="oldPwd" type="password" class="form-control" placeholder="请输入原始密码">
+                                </div>
+                                <div class="form-group">
+                                    <label>新密码</label>
+                                    <input name="newPwd" type="password" class="form-control" placeholder="请输入新密码">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">确认修改</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+
+    <script src="~/js/lib/sweetalert/sweetalert.min.js"></script>
+    <script src="~/js/lib/sweetalert/sweetalert.init.js"></script>
+}

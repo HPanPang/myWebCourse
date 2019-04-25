@@ -1,0 +1,80 @@
+﻿@{
+    Layout = "_StudentLayout";
+    ViewData["Title"] = "个人课程查询";
+    var student = Model;
+    ViewData["StudentName"] = student[0].name;
+    ViewData["StuId"] = student[0].id;
+}
+
+@if (student.Count == 1)
+{
+    <div class="alert alert-warning text-center">
+        @student[0].name 您还没有选课！！
+    </div>
+}
+
+<div class="container-fluid">
+    <!-- Start Page Content -->
+    <div class="row">
+        <div class="col-12">
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">当前已选课程</h4>
+                    <h6 class="card-subtitle">@student[0].name 的已选课程</h6>
+                    <div class="table-responsive m-t-40">
+
+                        <table id="myTable" class="table table-bordered table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th>课程代码</th>
+                                    <th>课程名称</th>
+                                    <th>课程成绩</th>
+                                    <th>课程类型</th>
+                                    <th>课程学分</th>
+                                    <th>是否通过</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    if (student.Count >= 0)
+                                    {
+                                        for (int i = 1; i < student.Count; i++)
+                                        {
+                                            <tr role="row" class="odd">
+                                                <td>@student[i].coursecode</td>
+                                                <td>@student[i].coursename</td>
+                                                <td>@student[i].coursescore</td>
+                                                <td>@student[i].coursetype</td>
+                                                <td>@student[i].coursecredit</td>
+                                                @if (@student[i].coursescore >= 60)
+                                                {
+                                                    <td>是</td>}
+                                                else
+                                                {
+                                                    <td>否</td>}
+                                            </tr>
+                                        }
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/js/lib/datatables/datatables.min.js"></script>
+    <script src="~/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="~/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="~/js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="~/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="~/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="~/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="~/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <script src="~/js/lib/datatables/datatables-init.js"></script>
+}

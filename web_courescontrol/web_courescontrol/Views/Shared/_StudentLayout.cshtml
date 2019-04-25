@@ -1,0 +1,198 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="~/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/lib/sweetalert/sweetalert.css" rel="stylesheet">
+    <style>
+        .myduiqi{
+            width:240px; 
+            position:absolute;
+            bottom:0px;
+            right:0px;
+            font-size:25px
+        }
+    </style>
+</head>
+<body class="header-fix fix-sidebar">
+    <!-- Main wrapper  -->
+    <div id="main-wrapper">
+        <!-- header header  -->
+        <div class="header">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/Student/?id=@ViewData["StuId"]">
+                        <!-- Logo icon -->
+                        <b><img src="~/images/logo.png" alt="homepage" class="dark-logo" /></b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span><img src="~/images/logo-text.png" alt="homepage" class="dark-logo" /></span>
+                    </a>
+                </div>
+                <!-- End Logo -->
+
+
+                <div class="navbar-collapse">
+                    <!-- toggle and nav items -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link toggle-nav hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+
+                        <li class="nav-item m-l-10"> <a class="nav-link sidebartoggle hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+                        <!-- Messages -->
+                        <!-- End Messages -->
+                    </ul>
+                    <ul class="navbar-nav mr-auto mt-md-auto">
+                        <li id="hitokoto" class="col-lg-auto alert alert-light text-center"> </li>
+                    </ul>
+
+                    <!-- User profile and search -->
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right animated slideInRight">
+                                <ul class="dropdown-user">
+                                    <li role="separator" class="divider"></li>
+                                    <li><a> @ViewData["StudentName"] 同学</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href='/Student/changePwd/?id=@ViewData["StuId"]'> 修改密码</a></li>
+                                    <li><a href='/Student/ShowInfo/?id=@ViewData["StuId"]'>个人信息</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="/Home/login"> 退出账号</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="left-sidebar">
+            <div class="scroll-sidebar">
+                <nav class="sidebar-nav">
+                    <ul id="sidebar-menu">
+                        <li class="nav-devider"></li>
+
+                        <li>
+                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-user-circle"></i><span class="hide-menu">信息查询 </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href='/Student/ShowInfo/?id=@ViewData["StuId"]'>个人信息查询 </a></li>
+                                <li><a href='/Student/ShowCourseInfo/?id=@ViewData["StuId"]'>已选课程查询 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                        <li>
+                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cog"></i><span class="hide-menu">个人信息维护</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href='/Student/UpdateInfo/?id=@ViewData["StuId"]'>信息修改</a></li>
+                                <li><a href='/Student/changePwd/?id=@ViewData["StuId"]'>密码修改</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                        <li>
+                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-bookmark"></i><span class="hide-menu">网上选课</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href='/Student/ChooseTongshi/?id=@ViewData["StuId"]'>通识核心课程选课</a></li>
+                                <li><a href='/Student/Choosezhuanyejichu/?id=@ViewData["StuId"]'>专业基础课程选课</a></li>
+                                <li><a href='/Student/Choosezhuanyefangxiang/?id=@ViewData["StuId"]'>专业方向课程选课</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                    </ul>
+                    <div class="myduiqi">
+                        <div class="alert alert-light">
+                            <div class="text-center" style="font-size:20px">
+                                @DateTime.Now.ToString("yyyy 年 MM 月 dd 日")
+                            </div>
+                        </div>
+                        <div class="alert alert-light" style="">
+                            <div id="datetime" class="text-center">
+                                <div id="Hour" style="display:inline">
+                                    <script>
+                                        setInterval("hour()", 1000);
+                                        function hour() {
+                                            if (new Date().getHours() <= 9) {
+                                                document.getElementById('Hour').innerHTML = '0' + new Date().getHours();
+                                            }
+                                            else {
+                                                document.getElementById('Hour').innerHTML = new Date().getHours();
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                                <div style="display:inline">:</div>
+                                <div id="Minutes" style="display:inline">
+                                    <script>
+                                        setInterval("minutes()", 1000);
+                                        function minutes() {
+                                            if (new Date().getMinutes() <= 9) {
+                                                document.getElementById('Minutes').innerHTML = '0' + new Date().getMinutes();
+                                            }
+                                            else {
+                                                document.getElementById('Minutes').innerHTML = new Date().getMinutes();
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                                <div style="display:inline">:</div>
+                                <div id="Seconds" style="display:inline">
+                                    <script>
+                                            setInterval("seconds()", 1000);
+                                        function seconds() {
+                                            if (new Date().getSeconds() <= 9) {
+                                                document.getElementById('Seconds').innerHTML = '0' + new Date().getSeconds();
+                                            }
+                                            else {
+                                                document.getElementById('Seconds').innerHTML = new Date().getSeconds();
+                                            }
+                                            
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </nav>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                <partial name="_CookieConsentPartial" />
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    <script src="~/js/lib/jquery/jquery.min.js"></script>
+    <script src="~/js/lib/bootstrap/js/popper.min.js"></script>
+    <script src="~/js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.slimscroll.js"></script>
+    <script src="~/js/sidebarmenu.js"></script>
+    <script src="~/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="~/js/lib/webticker/jquery.webticker.min.js"></script>
+    <script src="~/js/lib/peitychart/jquery.peity.min.js"></script>
+    <script src="~/js/custom.min.js"></script>
+    <script src="~/js/dashboard-1.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
