@@ -1,0 +1,14 @@
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\bin\Debug\netcoreapp2.2\CourseDomain.deps.json
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\bin\Debug\netcoreapp2.2\CourseDomain.runtimeconfig.json
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\bin\Debug\netcoreapp2.2\CourseDomain.runtimeconfig.dev.json
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\bin\Debug\netcoreapp2.2\CourseDomain.dll
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\bin\Debug\netcoreapp2.2\CourseDomain.pdb
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\obj\Debug\netcoreapp2.2\CourseDomain.csproj.CoreCompileInputs.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\obj\Debug\netcoreapp2.2\CourseDomain.AssemblyInfoInputs.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\obj\Debug\netcoreapp2.2\CourseDomain.AssemblyInfo.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\obj\Debug\netcoreapp2.2\CourseDomain.dll
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\obj\Debug\netcoreapp2.2\CourseDomain.pdb
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\obj\Debug\netcoreapp2.2\CourseDomain.csprojAssemblyReference.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.dll
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.xml
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\obj\Debug\netcoreapp2.2\CourseDomain.csproj.CopyComplete
