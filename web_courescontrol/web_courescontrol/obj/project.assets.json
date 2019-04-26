@@ -13058,11 +13058,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\计算机课程\\web应用开发 ASP.NET\\CourseCon\\web_courescontrol\\web_courescontrol\\CourseWeb_Ui.csproj",
+      "projectUniqueName": "D:\\GitHub\\web_courescontrol\\web_courescontrol\\CourseWeb_Ui.csproj",
       "projectName": "CourseWeb_Ui",
-      "projectPath": "D:\\计算机课程\\web应用开发 ASP.NET\\CourseCon\\web_courescontrol\\web_courescontrol\\CourseWeb_Ui.csproj",
+      "projectPath": "D:\\GitHub\\web_courescontrol\\web_courescontrol\\CourseWeb_Ui.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\计算机课程\\web应用开发 ASP.NET\\CourseCon\\web_courescontrol\\web_courescontrol\\obj\\",
+      "outputPath": "D:\\GitHub\\web_courescontrol\\web_courescontrol\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13081,8 +13081,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\计算机课程\\web应用开发 ASP.NET\\CourseCon\\web_courescontrol\\CourseDomain\\CourseDomain.csproj": {
-              "projectPath": "D:\\计算机课程\\web应用开发 ASP.NET\\CourseCon\\web_courescontrol\\CourseDomain\\CourseDomain.csproj"
+            "D:\\GitHub\\web_courescontrol\\CourseDomain\\CourseDomain.csproj": {
+              "projectPath": "D:\\GitHub\\web_courescontrol\\CourseDomain\\CourseDomain.csproj"
             }
           }
         }

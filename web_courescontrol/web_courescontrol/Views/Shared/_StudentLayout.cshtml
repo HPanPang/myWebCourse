@@ -17,13 +17,14 @@
     <title>@ViewData["Title"]</title>
     <link href="~/css/site.css" rel="stylesheet" />
     <link href="~/css/lib/sweetalert/sweetalert.css" rel="stylesheet">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <style>
-        .myduiqi{
-            width:240px; 
-            position:absolute;
-            bottom:0px;
-            right:0px;
-            font-size:25px
+        .myduiqi {
+            width: 240px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            font-size: 25px
         }
     </style>
 </head>
@@ -123,7 +124,7 @@
                         </div>
                         <div class="alert alert-light" style="">
                             <div id="datetime" class="text-center">
-                                <div id="Hour" style="display:inline">
+                                <div id="Hour" style="display:inline">00
                                     <script>
                                         setInterval("hour()", 1000);
                                         function hour() {
@@ -137,7 +138,7 @@
                                     </script>
                                 </div>
                                 <div style="display:inline">:</div>
-                                <div id="Minutes" style="display:inline">
+                                <div id="Minutes" style="display:inline">00
                                     <script>
                                         setInterval("minutes()", 1000);
                                         function minutes() {
@@ -151,7 +152,7 @@
                                     </script>
                                 </div>
                                 <div style="display:inline">:</div>
-                                <div id="Seconds" style="display:inline">
+                                <div id="Seconds" style="display:inline">00
                                     <script>
                                             setInterval("seconds()", 1000);
                                         function seconds() {
@@ -166,6 +167,9 @@
                                     </script>
                                 </div>
                             </div>
+                        </div>
+                        <div class="text-center">
+                            <a class="github-button" href="https://github.com/HPanPang" data-show-count="true" aria-label="Follow HPanPang on GitHub">Follow 胡胖胖</a>
                         </div>
                     </div>
                     

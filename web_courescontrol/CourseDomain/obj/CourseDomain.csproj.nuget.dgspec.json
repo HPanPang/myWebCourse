@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\计算机课程\\web应用开发 ASP.NET\\CourseCon\\web_courescontrol\\CourseDomain\\CourseDomain.csproj": {}
+    "D:\\GitHub\\web_courescontrol\\CourseDomain\\CourseDomain.csproj": {}
   },
   "projects": {
-    "D:\\计算机课程\\web应用开发 ASP.NET\\CourseCon\\web_courescontrol\\CourseDomain\\CourseDomain.csproj": {
+    "D:\\GitHub\\web_courescontrol\\CourseDomain\\CourseDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\计算机课程\\web应用开发 ASP.NET\\CourseCon\\web_courescontrol\\CourseDomain\\CourseDomain.csproj",
+        "projectUniqueName": "D:\\GitHub\\web_courescontrol\\CourseDomain\\CourseDomain.csproj",
         "projectName": "CourseDomain",
-        "projectPath": "D:\\计算机课程\\web应用开发 ASP.NET\\CourseCon\\web_courescontrol\\CourseDomain\\CourseDomain.csproj",
+        "projectPath": "D:\\GitHub\\web_courescontrol\\CourseDomain\\CourseDomain.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\计算机课程\\web应用开发 ASP.NET\\CourseCon\\web_courescontrol\\CourseDomain\\obj\\",
+        "outputPath": "D:\\GitHub\\web_courescontrol\\CourseDomain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
