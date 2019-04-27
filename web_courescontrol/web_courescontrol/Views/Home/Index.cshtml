@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon.png">
+    <title>用户登录</title>
+    <link href="~/css/lib/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+</head>
+
+<body class="header-fix fix-sidebar">
+    <div id="main-wrapper">
+        <div class="unix-login">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="login-content card">
+                            <div class="login-form">
+                                <h4>系统登录</h4>
+                                <form action='@Url.Action("Judge")' method="post">
+                                    <div class="form-group">
+                                        <label>学号/工号</label>
+                                        <input name="id" type="text" class="form-control" placeholder="学号/工号">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>登录密码</label>
+                                        <input name="pwd" type="password" class="form-control" placeholder="登录密码">
+                                    </div>
+                                    @if (ViewBag.type == 1)
+                                    {
+                                        <div class="alert alert-danger text-center">
+                                            账号或密码输入错误！
+                                        </div>
+                                    }
+                                    <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">登录</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/lib/jquery/jquery.min.js"></script>
+    <script src="~/js/lib/bootstrap/js/popper.min.js"></script>
+    <script src="~/js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.slimscroll.js"></script>
+    <script src="~/js/sidebarmenu.js"></script>
+    <script src="~/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="~/js/custom.min.js"></script>
+    <script src="~/js/lib/toastr/toastr.min.js"></script>
+    <script src="~/js/lib/toastr/toastr.init.js"></script>
+    <script src="~/js/lib/sweetalert/sweetalert.min.js"></script>
+    <script src="~/js/lib/sweetalert/sweetalert.init.js"></script>
+</body>
+
+</html>

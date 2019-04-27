@@ -12,3 +12,17 @@ D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDom
 D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\bin\Release\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.dll
 D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\bin\Release\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.xml
 D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\CourseDomain\obj\Release\netcoreapp2.2\CourseDomain.csproj.CopyComplete
+D:\GitHub\web_courescontrol\CourseDomain\bin\Release\netcoreapp2.2\CourseDomain.deps.json
+D:\GitHub\web_courescontrol\CourseDomain\bin\Release\netcoreapp2.2\CourseDomain.runtimeconfig.json
+D:\GitHub\web_courescontrol\CourseDomain\bin\Release\netcoreapp2.2\CourseDomain.runtimeconfig.dev.json
+D:\GitHub\web_courescontrol\CourseDomain\bin\Release\netcoreapp2.2\CourseDomain.dll
+D:\GitHub\web_courescontrol\CourseDomain\bin\Release\netcoreapp2.2\CourseDomain.pdb
+D:\GitHub\web_courescontrol\CourseDomain\bin\Release\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.dll
+D:\GitHub\web_courescontrol\CourseDomain\bin\Release\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Core.xml
+D:\GitHub\web_courescontrol\CourseDomain\obj\Release\netcoreapp2.2\CourseDomain.csprojAssemblyReference.cache
+D:\GitHub\web_courescontrol\CourseDomain\obj\Release\netcoreapp2.2\CourseDomain.csproj.CoreCompileInputs.cache
+D:\GitHub\web_courescontrol\CourseDomain\obj\Release\netcoreapp2.2\CourseDomain.AssemblyInfoInputs.cache
+D:\GitHub\web_courescontrol\CourseDomain\obj\Release\netcoreapp2.2\CourseDomain.AssemblyInfo.cs
+D:\GitHub\web_courescontrol\CourseDomain\obj\Release\netcoreapp2.2\CourseDomain.csproj.CopyComplete
+D:\GitHub\web_courescontrol\CourseDomain\obj\Release\netcoreapp2.2\CourseDomain.dll
+D:\GitHub\web_courescontrol\CourseDomain\obj\Release\netcoreapp2.2\CourseDomain.pdb

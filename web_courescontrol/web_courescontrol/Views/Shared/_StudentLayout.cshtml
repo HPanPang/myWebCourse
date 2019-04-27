@@ -1,17 +1,12 @@
-﻿
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon.png">
-    <!-- Custom CSS -->
     <link href="~/css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
@@ -29,42 +24,23 @@
     </style>
 </head>
 <body class="header-fix fix-sidebar">
-    <!-- Main wrapper  -->
     <div id="main-wrapper">
-        <!-- header header  -->
         <div class="header">
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
-
-
-                <!-- Logo -->
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/Student/?id=@ViewData["StuId"]">
-                        <!-- Logo icon -->
                         <b><img src="~/images/logo.png" alt="homepage" class="dark-logo" /></b>
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
                         <span><img src="~/images/logo-text.png" alt="homepage" class="dark-logo" /></span>
                     </a>
                 </div>
-                <!-- End Logo -->
-
-
                 <div class="navbar-collapse">
-                    <!-- toggle and nav items -->
                     <ul class="navbar-nav mr-auto mt-md-0">
-                        <!-- This is  -->
                         <li class="nav-item"> <a class="nav-link toggle-nav hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
-
                         <li class="nav-item m-l-10"> <a class="nav-link sidebartoggle hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-
-                        <!-- Messages -->
-                        <!-- End Messages -->
                     </ul>
                     <ul class="navbar-nav mr-auto mt-md-auto">
                         <li id="hitokoto" class="col-lg-auto alert alert-light text-center"> </li>
                     </ul>
-
-                    <!-- User profile and search -->
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
@@ -76,7 +52,7 @@
                                     <li><a href='/Student/changePwd/?id=@ViewData["StuId"]'> 修改密码</a></li>
                                     <li><a href='/Student/ShowInfo/?id=@ViewData["StuId"]'>个人信息</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="/Home/login"> 退出账号</a></li>
+                                    <li><a href="/Home"> 退出账号</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -89,7 +65,6 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebar-menu">
                         <li class="nav-devider"></li>
-
                         <li>
                             <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-user-circle"></i><span class="hide-menu">信息查询 </span></a>
                             <ul aria-expanded="false" class="collapse">
@@ -162,7 +137,6 @@
                                             else {
                                                 document.getElementById('Seconds').innerHTML = new Date().getSeconds();
                                             }
-                                            
                                         }
                                     </script>
                                 </div>
@@ -172,7 +146,6 @@
                             <a class="github-button" href="https://github.com/HPanPang" data-show-count="true" aria-label="Follow HPanPang on GitHub">Follow 胡胖胖</a>
                         </div>
                     </div>
-                    
                 </nav>
             </div>
         </div>

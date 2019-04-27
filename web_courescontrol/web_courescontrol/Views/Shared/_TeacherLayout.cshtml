@@ -3,63 +3,56 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon.png">
+    <link href="~/css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/lib/sweetalert/sweetalert.css" rel="stylesheet">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <style>
+        .myduiqi {
+            width: 240px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            font-size: 25px
+        }
+    </style>
 </head>
 <body class="header-fix fix-sidebar">
-    <!-- Main wrapper  -->
     <div id="main-wrapper">
-        <!-- header header  -->
         <div class="header">
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
-
-
-                <!-- Logo -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
-                        <!-- Logo icon -->
-                        <b><img src="images/logo.png" alt="homepage" class="dark-logo" /></b>
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
-                        <span><img src="images/logo-text.png" alt="homepage" class="dark-logo" /></span>
+                    <a class="navbar-brand" href="/Student/?id=@ViewData["StuId"]">
+                        <b><img src="~/images/logo.png" alt="homepage" class="dark-logo" /></b>
+                        <span><img src="~/images/logo-text.png" alt="homepage" class="dark-logo" /></span>
                     </a>
                 </div>
-                <!-- End Logo -->
-
-
                 <div class="navbar-collapse">
-                    <!-- toggle and nav items -->
                     <ul class="navbar-nav mr-auto mt-md-0">
-                        <!-- This is  -->
                         <li class="nav-item"> <a class="nav-link toggle-nav hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
                         <li class="nav-item m-l-10"> <a class="nav-link sidebartoggle hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                        <!-- Messages -->
-                        <!-- End Messages -->
                     </ul>
-
-
-                    <!-- User profile and search -->
+                    <ul class="navbar-nav mr-auto mt-md-auto">
+                        <li id="hitokoto" class="col-lg-auto alert alert-light text-center"> </li>
+                    </ul>
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
                             <div class="dropdown-menu dropdown-menu-right animated slideInRight">
                                 <ul class="dropdown-user">
                                     <li role="separator" class="divider"></li>
-                                    <li><a> 欢迎您，@ViewData["TeacherName"]</a></li>
+                                    <li><a> @ViewData["StudentName"] 同学</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#"> 修改密码</a></li>
-                                    <li><a href="#"> 个人信息</a></li>
+                                    <li><a href='/Student/changePwd/?id=@ViewData["StuId"]'> 修改密码</a></li>
+                                    <li><a href='/Student/ShowInfo/?id=@ViewData["StuId"]'>个人信息</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#"> 退出账号</a></li>
+                                    <li><a href="/Home"> 退出账号</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -67,178 +60,117 @@
                 </div>
             </nav>
         </div>
-        <!-- End header header -->
-        <!-- 左侧菜单设置  -->
         <div class="left-sidebar">
-            <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
-                <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebar-menu">
                         <li class="nav-devider"></li>
-                        <li class="nav-label">Home</li>
                         <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-primary pull-right">6</span></span></a>
+                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-user-circle"></i><span class="hide-menu">信息查询 </span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">Dashboard 1 </a></li>
-                                <li><a href="index1.html">Dashboard 2 </a></li>
-                                <li><a href="index2.html">Dashboard 3 </a></li>
-                                <li><a href="index3.html">Dashboard 4 </a></li>
-                                <li><a href="index4.html">Dashboard 5 </a></li>
-                                <li><a href="index5.html">Dashboard 6 </a></li>
+                                <li><a href='/Student/ShowInfo/?id=@ViewData["StuId"]'>个人信息查询 </a></li>
+                                <li><a href='/Student/ShowCourseInfo/?id=@ViewData["StuId"]'>已选课程查询 </a></li>
                             </ul>
                         </li>
-                        <li class="nav-label">Layout</li>
+                        <li class="nav-devider"></li>
                         <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-columns"></i><span class="hide-menu">Layout</span></a>
+                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cog"></i><span class="hide-menu">个人信息维护</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="layout-blank.html">Blank</a></li>
-                                <li><a href="layout-boxed.html">Boxed</a></li>
-                                <li><a href="layout-fix-header.html">Fix Header</a></li>
-                                <li><a href="layout-fix-sidebar.html">Fix Sidebar</a></li>
+                                <li><a href='/Student/UpdateInfo/?id=@ViewData["StuId"]'>信息修改</a></li>
+                                <li><a href='/Student/changePwd/?id=@ViewData["StuId"]'>密码修改</a></li>
                             </ul>
                         </li>
-                        <li class="nav-label">Apps &amp; Charts</li>
+                        <li class="nav-devider"></li>
                         <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-envelope"></i><span class="hide-menu">Mailbox</span></a>
+                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-bookmark"></i><span class="hide-menu">网上选课</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="email-compose.html">Compose</a></li>
-                                <li><a href="email-read.html">Read</a></li>
-                                <li><a href="email-inbox.html">Inbox</a></li>
+                                <li><a href='/Student/ChooseTongshi/?id=@ViewData["StuId"]'>通识核心课程选课</a></li>
+                                <li><a href='/Student/Choosezhuanyejichu/?id=@ViewData["StuId"]'>专业基础课程选课</a></li>
+                                <li><a href='/Student/Choosezhuanyefangxiang/?id=@ViewData["StuId"]'>专业方向课程选课</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-bar-chart"></i><span class="hide-menu">Charts</span></a>
-                            <ul aria-expanded="false" class="collapse">
-
-                                <li><a href="chart-morris.html">Morris</a></li>
-                                <li><a href="chart-chartjs.html">ChartJs</a></li>
-                                <li><a href="chart-chartist.html">Chartist </a></li>
-                                <li><a href="chart-amchart.html">AmChart</a></li>
-                                <li><a href="chart-echart.html">EChart</a></li>
-                                <li><a href="chart-sparkline.html">Sparkline</a></li>
-                                <li><a href="chart-peity.html">Peity</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-label">Features</li>
-                        <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Ui Elements <span class="label label-rouded label-danger pull-right">12</span></span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="ui-alert.html">Alert</a></li>
-                                <li><a href="ui-button.html">Button</a></li>
-                                <li><a href="ui-dropdown.html">Dropdown</a></li>
-                                <li><a href="ui-progressbar.html">Progressbar</a></li>
-                                <li><a href="ui-tab.html">Tab</a></li>
-                                <li><a href="ui-typography.html">Typography</a></li>
-                                <li><a href="uc-calender.html">Calender</a></li>
-                                <li><a href="uc-datamap.html">Datamap</a></li>
-                                <li><a href="uc-nestedable.html">Nestedable</a></li>
-                                <li><a href="uc-sweetalert.html">Sweetalert</a></li>
-                                <li><a href="uc-toastr.html">Toastr</a></li>
-                                <li><a href="uc-weather.html">Weather</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-wpforms"></i><span class="hide-menu">Forms</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="form-basic.html">Basic Forms</a></li>
-                                <li><a href="form-layout.html">Form Layout</a></li>
-                                <li><a href="form-validation.html">Form Validation</a></li>
-                                <li><a href="form-editor.html">Editor</a></li>
-                                <li><a href="form-dropzone.html">Dropzone</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Tables</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="table-bootstrap.html">Basic Tables</a></li>
-                                <li><a href="table-datatable.html">Data Tables</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="ti-wallet m-r-5"></i><span class="hide-menu">Widgets</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="widget.html">Widgets</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-label">EXTRA</li>
-                        <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-book"></i><span class="hide-menu">Sample Pages <span class="label label-rouded label-success pull-right">8</span></span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li>
-                                    <a href="#" class="has-arrow">Authentication <span class="label label-rounded label-success">3</span></a>
-                                    <ul aria-expanded="false" class="collapse">
-                                        <li><a href="page-login.html">Login</a></li>
-                                        <li><a href="page-register.html">Register</a></li>
-                                        <li><a href="page-invoice.html">Invoice</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" class="has-arrow">Error Pages</a>
-                                    <ul aria-expanded="false" class="collapse">
-                                        <li><a href="page-error-400.html">400</a></li>
-                                        <li><a href="page-error-403.html">403</a></li>
-                                        <li><a href="page-error-404.html">404</a></li>
-                                        <li><a href="page-error-500.html">500</a></li>
-                                        <li><a href="page-error-503.html">503</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-map-marker"></i><span class="hide-menu">Maps</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="map-vector.html">Vector Map</a></li>
-                            </ul>
-                        </li>
-
+                        <li class="nav-devider"></li>
                     </ul>
+                    <div class="myduiqi">
+                        <div class="alert alert-light">
+                            <div class="text-center" style="font-size:20px">
+                                @DateTime.Now.ToString("yyyy 年 MM 月 dd 日")
+                            </div>
+                        </div>
+                        <div class="alert alert-light" style="">
+                            <div id="datetime" class="text-center">
+                                <div id="Hour" style="display:inline">
+                                    00
+                                    <script>
+                                        setInterval("hour()", 1000);
+                                        function hour() {
+                                            if (new Date().getHours() <= 9) {
+                                                document.getElementById('Hour').innerHTML = '0' + new Date().getHours();
+                                            }
+                                            else {
+                                                document.getElementById('Hour').innerHTML = new Date().getHours();
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                                <div style="display:inline">:</div>
+                                <div id="Minutes" style="display:inline">
+                                    00
+                                    <script>
+                                        setInterval("minutes()", 1000);
+                                        function minutes() {
+                                            if (new Date().getMinutes() <= 9) {
+                                                document.getElementById('Minutes').innerHTML = '0' + new Date().getMinutes();
+                                            }
+                                            else {
+                                                document.getElementById('Minutes').innerHTML = new Date().getMinutes();
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                                <div style="display:inline">:</div>
+                                <div id="Seconds" style="display:inline">
+                                    00
+                                    <script>
+                                        setInterval("seconds()", 1000);
+                                        function seconds() {
+                                            if (new Date().getSeconds() <= 9) {
+                                                document.getElementById('Seconds').innerHTML = '0' + new Date().getSeconds();
+                                            }
+                                            else {
+                                                document.getElementById('Seconds').innerHTML = new Date().getSeconds();
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a class="github-button" href="https://github.com/HPanPang" data-show-count="true" aria-label="Follow HPanPang on GitHub">Follow 胡胖胖</a>
+                        </div>
+                    </div>
                 </nav>
-                <!-- End Sidebar navigation -->
             </div>
-            <!-- End Sidebar scroll-->
         </div>
-        <!-- End Left Sidebar  -->
-        <!-- Page wrapper  -->
         <div class="page-wrapper">
-            <!-- Bread crumb -->
-            <div class="row page-titles">
-                <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">欢迎您，@ViewData["TeacherName"]</h3>
-                </div>
-                
-            </div>
-            <!-- End Bread crumb -->
-            <!-- Container fluid  -->
             <div class="container-fluid">
-                <!-- Start Page Content -->
                 <partial name="_CookieConsentPartial" />
                 <main role="main" class="pb-3">
                     @RenderBody()
                 </main>
-                <!-- End PAge Content -->
             </div>
-            <!-- End Container fluid  -->
         </div>
-        <!-- End Page wrapper  -->
     </div>
-    <!-- End Wrapper -->
-    <!-- All Jquery -->
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
     <script src="~/js/lib/jquery/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
     <script src="~/js/lib/bootstrap/js/popper.min.js"></script>
     <script src="~/js/lib/bootstrap/js/bootstrap.min.js"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
     <script src="~/js/jquery.slimscroll.js"></script>
-    <!--Menu sidebar -->
     <script src="~/js/sidebarmenu.js"></script>
-    <!--stickey kit -->
     <script src="~/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
-    <!--Custom JavaScript -->
     <script src="~/js/lib/webticker/jquery.webticker.min.js"></script>
     <script src="~/js/lib/peitychart/jquery.peity.min.js"></script>
-    <!-- scripit init-->
     <script src="~/js/custom.min.js"></script>
     <script src="~/js/dashboard-1.js"></script>
     @RenderSection("Scripts", required: false)

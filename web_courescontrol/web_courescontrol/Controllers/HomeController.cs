@@ -19,46 +19,27 @@ namespace web_coursecontrol.Controllers
         {
             serviceStu = new StudentService();
             ServiceDr = new TeacherService();
-
         }
-        public IActionResult Index()
-        {
-            //return View();
-            return Redirect(Url.Action("Login"));
-        }
-        public IActionResult Login(int type)
+        public IActionResult Index(int type)
         {
             if (type == 1)
             {
+                ViewBag.type = 1;
                 return View(type);
             }
             return View();
         }
-        public IActionResult changePwd(int type)
-        {
-            if (type == 1)
-            {
-                return View(type);
-            }
-            return View();
-        }
-        
         public IActionResult Judge(int id, string pwd)
         {
-            if (pwd == null)
+            if (serviceStu.Judge(id, pwd))
             {
-                return Redirect(Url.Action("Login") + $"?type={3}");
-            }
-            else if (serviceStu.Judge(id, pwd))
-            {
-                return Redirect(Url.Action("index", "Student") + $"?id={id}");
+                return Redirect(Url.Action("Index", "Student") + $"?id={id}");
             }
             else if (ServiceDr.Judge(id, pwd))
             {
-                return Redirect(Url.Action("index", "Teacher") + $"?id={id}");
+                return Redirect(Url.Action("Index", "Teacher") + $"?id={id}");
             }
-
-            return Redirect(Url.Action("Login") + $"?type={1}");
+            return Redirect(Url.Action("Index") + $"?type={1}");
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

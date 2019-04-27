@@ -24,9 +24,6 @@ namespace CourseDomain.Service
         public string CourseName;
         public double CourseCredit;
         public double CourseScore;
-
-
-
     }
     public class StudentService
     {
