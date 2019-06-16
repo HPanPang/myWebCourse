@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "_AuthorLayout";
+    ViewData["Title"] = "更新个人信息";
+
+
+}
+
+    <div class="row">
+        <div class="col-lg-12 responsive-md-100">
+            <div class="card card-outline-info">
+                <div class="card-header">
+                    <h4 class="m-b-0 text-white">修改信息</h4>
+                </div>
+                <div class="card-body">
+                    <form action='@Url.Action("UpdateNow")' class="form-horizontal" method="post">
+                        <div class="form-body">
+                            <hr>
+                            <div class="row p-t-20">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">姓名</label>
+                                        <input type="text" name="name" class="form-control" placeholder=''>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">ID</label>
+                                        <input type="text" name="id" class="form-control" value=" " readonly="readonly" onClick="{this.value=' '}"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">联系电话</label>
+                                        <input type="text" name="phone" class="form-control form-control-danger" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">联系地址</label>
+                                        <input type="text" name="address" class="form-control form-control-danger" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">是否签订合同</label>
+                                        <input type="text" name="isContact"  readonly="readonly"  class="form-control form-control-danger" placeholder="@{}">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="form-actions">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-offset-12 col-md-12">
+                                            <button type="submit" class="btn btn-success">提交修改</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"> </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

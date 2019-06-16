@@ -1,0 +1,9 @@
+D:\GitHub\authorAdmin\author\bin\Debug\netstandard2.0\author.deps.json
+D:\GitHub\authorAdmin\author\bin\Debug\netstandard2.0\author.dll
+D:\GitHub\authorAdmin\author\bin\Debug\netstandard2.0\author.pdb
+D:\GitHub\authorAdmin\author\obj\Debug\netstandard2.0\author.csprojAssemblyReference.cache
+D:\GitHub\authorAdmin\author\obj\Debug\netstandard2.0\author.csproj.CoreCompileInputs.cache
+D:\GitHub\authorAdmin\author\obj\Debug\netstandard2.0\author.AssemblyInfoInputs.cache
+D:\GitHub\authorAdmin\author\obj\Debug\netstandard2.0\author.AssemblyInfo.cs
+D:\GitHub\authorAdmin\author\obj\Debug\netstandard2.0\author.dll
+D:\GitHub\authorAdmin\author\obj\Debug\netstandard2.0\author.pdb

@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "_CustomerLayout";
+    ViewData["Title"] = "图书信息";
+    var book = Model;
+   //ViewData["Name"] = customer.Name;
+}
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            书籍信息
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>书名</th>
+                            <th>作者</th>
+                            <th>类型</th>
+                            <th>价格</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for(int i = 0;i < book.Count; i++)
+                        {
+                        <tr>
+                            <td></td>
+                            <td>@book[i].Name</td>
+                            <td>@book[i].</td>
+                            <td>@book[i].Type</td>
+                            <td>@book[i].Price</td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+

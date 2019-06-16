@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- /.website title -->
+    <title>西安建筑科技大学出版社</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- CSS Files -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="~/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="~/css/animate.css" rel="stylesheet" media="screen">
+    <link href="~/css/owl.theme.css" rel="stylesheet">
+    <link href="~/css/owl.carousel.css" rel="stylesheet">
+    <!-- Colors -->
+    <link href="/author/css/lib/toastr/toastr.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/author/layui/css/layui.css" media="all">
+    <link href="~/css/css-index.css" rel="stylesheet" media="screen">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-scroll">
+    <div id="preloader"></div>
+    <div class="fullscreen landing parallax" style="background-image:url('images/XAUAT1.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <!-- /.logo -->
+                        <div class="logo wow fadeInDown"></div>
+                        <!-- /.main title -->
+                        <h1 class="wow fadeInLeft">
+                            西安建筑科技大学出版社
+                        </h1>
+                        <!-- /.header paragraph -->
+                        <div class="landing-text wow fadeInUp">
+                            <p>西安建筑科技大学出版社成立于1994年6月，是由西安建筑科技大学联合西安市政府发起的一家综合出版社。在市委，市政府的领导下，主要出版各类政治，经济，科技以及教育文化类图书。</p>
+                        </div>
+                        <!-- /.header button -->
+                        <div class="head-btn wow fadeInLeft">
+                            <a href="#feature" class="btn-primary">订书</a>
+                            <a href="http://hupangpang.xyz:8089/" class="btn-default">管理员登录</a>
+                        </div>
+                    </div>
+                    <!-- /.signup form -->
+                    <div class="col-md-5">
+                        <div class="signup-header wow fadeInUp">
+                            <h3 class="form-title text-center">系统登录</h3>
+                            <form id="login-form" action="#" method="post">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="u" value="503bdae81fde8612ff4944435">
+                                <input type="hidden" name="id" value="bfdba52708">
+                                <div class="form-group">
+                                    <input class="form-control input-lg" name="name" id="name" type="text" placeholder="账号" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control input-lg" name="password" id="password" type="password" placeholder="密码" required>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control input-lg" id="temp" name="temp" required>
+                                        <option value="author">作家</option>
+                                        <option value="customer">客户</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="button" id="btn" class="btn btn-warning btn-lg" value="登录">
+                                </div>
+                                <div class="form-group last">
+                                    <br />
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div id="menu">
+        <nav class="navbar-wrapper navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand site-name" href="#top"><img src="~/images/logo2.png" alt="logo"></a>
+                </div>
+
+                <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#intro">关于我们</a></li>
+                        <li><a href="#feature">好书推荐</a></li>
+                        <li><a href="#client">每日一句</a></li>
+                        <li><a href="#testi">热门书籍</a></li>
+                        <li><a href="#contact">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- /.关于我们 section -->
+    <div id="intro">
+        <div class="container">
+            <div class="row">
+
+                <!-- /.intro image -->
+                <div class="col-md-6 intro-pic wow slideInLeft">
+                    <img src="~/images/XAUAt.jpg" alt="image" class="img-responsive">
+                </div>
+
+                <!-- /.intro content -->
+                <div class="col-md-6 wow slideInRight">
+                    <h2>给我们一份信任，我们还您一本好书</h2>
+                    <p>
+                        西安建筑科技大学出版社成立以来，始终紧紧围绕中华传统优秀文化，彰显传承闻名，传播文化，服务大众，贡献学术的出版理念，受到学术界，出版界的充分肯定。立足西安建筑科技大学，面向西安，放眼全国。西安建筑科技大学出版社于1993年10月正式开始筹备，在经过八个月的筹备工作后，正式成立。成立短短一个月，就取得了社会效益和经济效益的双丰收。西安建筑科技大学出版社设有总经理，常务副总经理，总编辑，常务业务部。
+                    </p>
+
+                    <div class="btn-section"><a href="/Home/about" class="btn-default">了解更多</a></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.好书推荐1 section -->
+    <div id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-12 text-center feature-title">
+
+                    <!-- /.feature title -->
+                    <h2>死亡不是失去生命，而是走出时间。</h2>
+                </div>
+            </div>
+            <div class="row row-feat">
+                <div class="col-md-4 text-center">
+
+                    <!-- /.feature image -->
+                    <div class="feature-img">
+                        <img src="~/images/huozhe.png" alt="image" class="img-responsive wow fadeInLeft">
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+
+                    <!-- /.feature 1 -->
+                    <div class="col-sm-6 feat-list">
+                        <i class="pe-7s-notebook pe-5x pe-va wow fadeInUp"></i>
+                        <div class="inner">
+                            <h4>图书简介</h4>
+                            <p>
+                                《活着》是作家余华的代表作之一，讲述了在大时代背景下，随着内战、三反五反，大跃进，文化大革命等社会变革的故事。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- /.feature 2 -->
+                    <div class="col-sm-6 feat-list">
+                        <i class="pe-7s-cash pe-5x pe-va wow fadeInUp" data-wow-delay="0.2s"></i>
+                        <div class="inner">
+                            <h4>佳句精选</h4>
+                            <p>
+                                生的终止不过一场死亡，死的意义不过在于重生或永眠，死亡不是失去生命，而是走出时间。</br></br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- /.feature 3 -->
+                    <div class="col-sm-6 feat-list">
+                        <i class="pe-7s-cart pe-5x pe-va wow fadeInUp" data-wow-delay="0.4s"></i>
+                        <div class="inner">
+                            <h4>图书购买</h4>
+                            <img src="~/images/qrcode.png" />
+                        </div>
+                    </div>
+
+                    <!-- /.feature 4 -->
+                    <div class="col-sm-6 feat-list">
+                        <i class="pe-7s-users pe-5x pe-va wow fadeInUp" data-wow-delay="0.6s"></i>
+                        <div class="inner">
+                            <h4>作者简介</h4>
+                            <p>
+                                余华，1960年4月3日生于浙江杭州，当代作家。中国作家协会第九届全国委员会委员。1977年中学毕业后，进入北京鲁迅文学院进修深造。1983年开始创作，同年进入浙江省海盐县文化馆。1984年开始发表小说。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.好书推荐 2 section -->
+    <div id="feature-2">
+        <div class="container">
+            <div class="row">
+
+                <!-- /.feature content -->
+                <div class="col-md-6 wow fadeInLeft">
+                    <h2>人是为活着本身而活着的。</h2>
+                    <p>
+                        1960年4月3日生于浙江杭州，当代作家。中国作家协会第九届全国委员会委员。1977年中学毕业后，进入北京鲁迅文学院进修深造。1983年开始创作，同年进入浙江省海盐县文化馆。 1984年开始发表小说，《活着》和《许三观卖血记》同时入选百位批评家和文学编辑评选的九十年代最具有影响的十部作品。1998年获意大利格林扎纳·卡佛文学奖。2005年获得中华图书特殊贡献奖。现就职于杭州文联。
+                    </p>
+
+                    <div class="btn-section"><a href="https://baike.baidu.com/item/%E6%B4%BB%E7%9D%80/10565923?fr=aladdin" class="btn-default">了解更多</a></div>
+
+                </div>
+
+                <!-- /.feature image -->
+                <div class="col-md-6 feature-2-pic wow fadeInRight">
+                    <img src="~/images/yuhua.jpg" alt="macbook" class="img-responsive">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- /.client section -->
+    <div id="client">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img alt="client" src="~/images/client1.png" class="wow fadeInUp">
+                    <img alt="client" src="~/images/client2.png" class="wow fadeInUp" data-wow-delay="0.2s">
+                    <img alt="client" src="~/images/client3.png" class="wow fadeInUp" data-wow-delay="0.4s">
+                    <img alt="client" src="~/images/client4.png" class="wow fadeInUp" data-wow-delay="0.6s">
+                </div>
+                <div class="container col-sm-12 text-center wow fadeInUp"  data-wow-delay="0.8s">
+                    <span id="hitokoto">:D 获取中...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.热门书籍 section -->
+    <div id="testi">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="wow fadeInLeft">热门书籍</h2>
+                <div class="title-line wow fadeInRight"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div id="owl-testi" class="owl-carousel owl-theme wow fadeInUp">
+
+                        <!-- /.testimonial 1 -->
+                        <div class="testi-item">
+                            <div class="client-pic text-center">
+
+                                <!-- /.client photo -->
+                                <img src="~/images/9787538693058.png" alt="client">
+                            </div>
+                            <div class="box">
+
+                                <!-- /.testimonial content -->
+                                <p class="message text-center">"《菜根谭》是一部论述修养、人生、处世、出世的语录集，是囊括五千年中国处世智慧的奇书。作为一部富有汉民族生活伦理思想的著作，采儒、道、佛三家之精髓，以儒道为核心，拥有修身、齐家、治国、平天下等大道；融处世哲学，生活艺术，审美情趣于一体；它似语录，却拥有语录所没有的趣味；它似随笔，却拥有随笔所不及的整饬。它是一部文辞优美、含义深邃的读物，更是一部陶冶人之情操、磨炼人之意志、催人奋发向上的中国文学作品。“咬得菜根者则百事可为”，《菜根谭》以众多富含哲理的名言警句教予世人出世入世之法则。"</p>
+                            </div>
+                            <div class="client-info text-center">
+
+                                <!-- /.client name -->
+                                洪应明 <span class="company">《菜根谭》</span>
+                            </div>
+                        </div>
+
+                        <!-- /.testimonial 2 -->
+                        <div class="testi-item">
+                            <div class="client-pic text-center">
+
+                                <!-- /.client photo -->
+                                <img src="~/images/9787550249691.jpg" alt="client">
+                            </div>
+                            <div class="box">
+
+                                <!-- /.testimonial content -->
+                                <p class="message text-center">"《人间词话》是王国维的代表作，是中国近代*负盛名的一部词话著作。他用传统的词话形式及传统的概念、术语和思维逻辑，较为自然地融进了一些新的观念和方法，其总结的理论问题又具有相当普遍的意义，这就使它在当时新旧两代的读者中产生了重大反响，在中国近代文学批评史上具有崇高的地位。本书的理论核心是“境界”说，该书观点新颖，立论精辟，自成体系，特别是书中提出的三重境界说一直受到国内外学者的重视。"</p>
+                            </div>
+                            <div class="client-info text-center">
+
+                                <!-- /.client name -->
+                                王国维 <span class="company">《人间词话》</span>
+                            </div>
+                        </div>
+
+                        <!-- /.testimonial 3 -->
+                        <div class="testi-item">
+                            <div class="client-pic text-center">
+
+                                <!-- /.client photo -->
+                                <img src="~/images/9787544253994.jpg" alt="client">
+                            </div>
+                            <div class="box">
+
+                                <!-- /.testimonial content -->
+                                <p class="message text-center">"《百年孤独》是魔幻现实主义文学的代表作，描写了布恩迪亚家族七代人的传奇故事，以及加勒比海沿岸小镇马孔多的百年兴衰，反映了拉丁美洲一个世纪以来风云变幻的历史。作品融入神话传说、民间故事、宗教典故等神秘因素，巧妙地糅合了现实与虚幻，展现出一个瑰丽的想象世界，成为20世纪最重要的经典文学巨著之一。1982年加西亚•马尔克斯获得诺贝尔文学奖，奠定世界级文学大师的地位，很大程度上乃是凭借《百年孤独》的巨大影响。"</p>
+                            </div>
+                            <div class="client-info text-center">
+
+                                <!-- /.client name -->
+                                加西亚·马尔克斯 <span class="company">《百年孤独》</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /注册 section -->
+    <div id="contact">
+        <div class="contact fullscreen parallax" style="background-image:url('images/XAUAT1.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row contact-row">
+
+                        <!-- /.address and contact -->
+                        <div class="col-sm-5 contact-left wow fadeInUp">
+                            <h2><span class="highlight">联</span>系我们</h2>
+                            <ul class="ul-address">
+                                <li>
+                                    <i class="pe-7s-map-marker"></i><br>陕西省西安市西安建筑科技大学<br>鄠邑区草堂镇草堂校区<span class="highlight">710000</span>
+</li>
+                                <li>
+                                    <i class="pe-7s-phone"></i><br>17691174341
+                                </li>
+                                <li><i class="pe-7s-mail"></i><br><a href="xauatpress@xauat.com">xauatpress@xauat.com</a></li>
+                                <li><i class="pe-7s-look"></i><br><a href="#">www.hupangpang.xyz</a></li>
+                            </ul>
+
+                        </div>
+
+                        <!-- /.contact form -->
+                        <div class="col-sm-7 contact-right">
+                            <form method="POST" id="contact-form" name="Register" class="form-horizontal" action='@Url.Action("RegisterJudge")' onsubmit="return check();">
+                                <div style="visibility:hidden;text-align:center;" id="alert" name="alert" class="alert alert-danger">
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Registerid" id="Registerid" class="form-control wow fadeInUp" placeholder="用户名" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="firstpassword" id="firstpassword" class="form-control wow fadeInUp" placeholder="请输入密码（大于6位）" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="secondpassword" id="secondpassword" class="form-control wow fadeInUp" placeholder="密码确认" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="phone" id="phone" class="form-control wow fadeInUp" placeholder="联系方式" required />
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control wow fadeInUp" id="type" name="type" required>
+                                        <option value="author">作家</option>
+                                        <option value="customer">客户</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input value="注册" class="btn btn-success wow fadeInUp" type="submit" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="col-sm-4 col-sm-offset-4">
+                <!-- /.social links -->
+                <div class="text-center wow fadeInUp" style="font-size: 14px;">Copyright &copy;西安建筑科技大学13#530版权所有</div>
+                <a href="#" class="scrollToTop"><i class="pe-7s-up-arrow pe-va"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /.javascript files -->
+    <script src="~/js/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="~/js/jquery.sticky.js"></script>
+    <script src="~/js/wow.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/author/layui/layui.all.js" charset="utf-8"></script>
+    <script src="~/author/js/lib/toastr/toastr.min.js"></script>
+    <script src="~/author/js/lib/toastr/toastr.init.js"></script>
+    <script src="~/author/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    <script>new WOW().init();</script>
+    <script type="text/javascript">
+        $("#btn").click(function () {
+            var name = $("#name").val();
+            var password = $("#password").val();
+            var type = $("#temp").val();
+            $.ajax({
+                url: '/Home/LoginJudge',
+                data: { name: name, password: password, temp: type },
+                type: "POST",
+                dataType: "JSON",
+                success: function (data) {
+                    if (data.code == 0 && data.type == "author") {
+                        layer.alert('登录成功，正在进入后台！', {icon: 6});
+                        window.location.href = '/Author';
+                    }
+                    if (data.code == 0 && data.type == "customer") {
+                        layer.alert('登录成功，正在进入后台！', {icon: 6});
+                        window.location.href = '/Customer';
+                    }
+                    if (data.code == 1) {
+                        layer.msg('密码输入错误。。', {icon: 5});
+                    }
+                    
+
+                }
+            })
+        })
+
+
+        function check() {
+            with (document.all) {
+                var a = document.getElementById("alert");
+                var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
+                var re = /^[a-zA-z]\w{3,15}$/;
+                if (!re.test(Registerid.value)) {
+                    a.style.visibility = "visible";
+                    $('#alert').html("帐号格式有误！请重新输入！");
+                    Registerid.value = "";
+                    return false;
+                }
+
+                if (document.Register.firstpassword.value.length < 6) {
+                    a.style.visibility = "visible";
+                    $('#alert').html("密码太短了！");
+                    firstpassword.value = "";
+                    secondpassword.value = "";
+                    return false;
+                }
+                if (firstpassword.value != secondpassword.value) {
+                    a.style.visibility = "visible";
+                    $('#alert').html("两次密码不一致！请重新输入！");
+                    firstpassword.value = "";
+                    secondpassword.value = "";
+                    return false;
+                }
+                if (!myreg.test(phone.value)) {
+                    a.style.visibility = "visible";
+                    $('#alert').html("手机号码格式有误！请重新输入！");
+                    phone.value = "";
+                    return false;
+                }
+                return true;
+
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+﻿@{
+    Layout = "_AuthorLayout";
+    ViewData["Title"] = "更新个人信息";
+    var author = Model;
+    ViewData["Name"] = author.Name;
+
+}
+<link href="/author/css/lib/toastr/toastr.min.css" rel="stylesheet">
+<link rel="stylesheet" href="~/author/layui/css/layui.css" media="all">
+<div class="row">
+    <div class="col-lg-12 responsive-md-100">
+        <div class="card card-outline-info">
+            <div class="card-header">
+                <h4 class="m-b-0 text-white">修改信息</h4>
+            </div>
+            <div class="card-body">
+                <form id="update-form" action='#' class="form-horizontal" method="post">
+                    <div class="form-body">
+                        <hr>
+                        <div class="row p-t-20">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">姓名</label>
+                                    <input type="text" id="name" name="name" class="form-control" placeholder='@author.Name'>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">ID</label>
+                                    <input type="text" id="id" name="id" class="form-control" value="@author.Id" readonly="readonly" onClick="{ this.value = '@author.Id' }" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">联系电话</label>
+                                    <input type="text" id="phone" name="phone" class="form-control form-control-danger" placeholder="@author.Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">联系地址</label>
+                                    <input type="text" id="address" name="address" class="form-control form-control-danger" placeholder="@author.Address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">是否签订合同</label>
+                                    @{
+                                        if (author.IsContact == "1")
+                                        {
+                                            <input type="text" id="isContact" name="isContact" readonly="readonly" class="form-control form-control-danger" placeholder="是">
+                                        }
+
+                                        if (author.IsContact == "0")
+                                        {
+                                            <input type="text" id="isContact" name="isContact" readonly="readonly" class="form-control form-control-danger" placeholder="否">
+                                        }
+
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-offset-12 col-md-12">
+                                            <button type="button" id="btn" class="btn btn-success">提交修改</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/author/layui/layui.all.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $("#btn").click(function () {
+            var name = $("#name").val();
+            var phone = $("#phone").val();
+            var address = $("#address").val();
+            var isContact = $("#isContact").val();
+            $.ajax({
+                url: '/Author/UpdateNow',
+                data: { name: name, phone: phone, address: address, isContact: isContact },
+                type: "POST",
+                dataType: "JSON",
+                success: function (data) {
+                    if (data.code > 0) {
+                        layer.alert('修改成功，共修改' + data.code + '项数据！', { icon: 6 });
+                        Location.reload();
+                    }
+                    if (data.code == 0) {
+                        layer.msg('似乎没有修改什么。。', { icon: 5 });
+
+                    }
+                }
+            })
+        })
+    </script>
+}

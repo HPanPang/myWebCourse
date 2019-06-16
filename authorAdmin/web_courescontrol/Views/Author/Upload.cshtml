@@ -1,0 +1,258 @@
+﻿@{
+    Layout = "_AuthorLayout";
+    ViewData["Title"] = "申请出书";
+
+}
+    <link href="/author/css/lib/toastr/toastr.min.css" rel="stylesheet">
+    <div class="row">
+        <div class="col-lg-12 responsive-md-100">
+            <div class="card card-outline-info">
+                <div class="card-header">
+                    <h4 class="m-b-0 text-white">提交出书申请</h4>
+                </div>
+                <div class="card-body">
+                    <form class="form-horizontal layui-form" method="post">
+                        <div class="form-body">
+                            <hr>
+                            <div class="row p-t-20">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">姓名</label>
+                                        <input type="text" name="xinming" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？" autocomplete="off" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">学号</label>
+                                        <input type="text" name="xuehao" class="form-control" value=" " readonly="readonly" onclick="{this.value=' '}">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">学院</label>
+                                        <input type="text" name="xueyuan" class="form-control form-control-danger" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">民族</label>
+                                        <input type="text" name="mingzu" class="form-control form-control-danger" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">性别</label>
+                                        <input type="text" name="sex" class="form-control form-control-danger" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">出生地</label>
+                                        <input type="text" name="chushengdi" class="form-control form-control-danger" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">联系电话</label>
+                                        <input type="text" name="lianxidianhua" class="form-control form-control-danger" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">身份证</label>
+                                        <input type="text" name="shengfenzheng" class="form-control form-control-danger" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">注册日期</label>
+                                        <span type="text" name="zhuceriqi" class="form-control form-control-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <label class="control-label">最近更新信息日期</label>
+                                        <span type="text" name="xiugairiqi" class="form-control form-control-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <fieldset class="layui-elem-field">
+                            <legend>上传文件</legend>
+                            <div class="layui-field-box">
+                                <div class="layui-upload">
+                                    <button type="button" class="layui-btn layui-btn-normal" id="testList">选择文稿</button>
+                                    <button type="button" class="layui-btn" id="testListAction">开始上传</button>
+                                    <div class="layui-upload-list">
+                                        <table class="layui-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>文件名</th>
+                                                    <th>大小</th>
+                                                    <th>状态</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="demoList"></tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-actions">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-offset-12 col-md-12">
+                                            <button class="layui-btn" lay-submit="" id="toastr-success-top-right" lay-filter="demo1">立即提交</button>
+                                            <button type="reset" id="toastr-info-top-right" class="layui-btn layui-btn-primary">重置</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"> </div>
+                            </div>
+                        </div>
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8IudBRodKY5HtMA0DFQGdtf2d09OevfpPgwhNFgeNweaoc9w8cNObbQyUqIhw7A4Ec5BL1yPYhiowB5rXXrJRYzrj77IOzeTI9Bbt44rVdDOhkFIudiG6mxRTgubBHYNFciOc_BdBqdkMAaNTx8bW1k">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@section Scripts{
+    <script src="~/author/layui/layui.js" charset="utf-8"></script>
+    <script src="~/author/js/lib/toastr/toastr.min.js"></script>
+    <script src="~/author/js/lib/toastr/toastr.init.js"></script>
+    <script src="~/author/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+    <script>
+        layui.use(['form', 'layedit', 'laydate'], function () {
+        var form = layui.form
+            , layer = layui.layer
+            , layedit = layui.layedit
+            , laydate = layui.laydate;
+
+        //日期
+        laydate.render({
+            elem: '#date'
+        });
+        laydate.render({
+            elem: '#date1'
+        });
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+
+        //自定义验证规则
+        form.verify({
+            title: function (value) {
+                if (value.length < 5) {
+                    return '标题至少得5个字符啊';
+                }
+            }
+            , pass: [
+                /^[\S]{6,12}$/
+                , '密码必须6到12位，且不能出现空格'
+            ]
+            , content: function (value) {
+                layedit.sync(editIndex);
+            }
+        });
+
+        //监听指定开关
+        form.on('switch(switchTest)', function (data) {
+            layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {
+                offset: '6px'
+            });
+            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+        });
+
+        //监听提交
+        form.on('submit(demo1)', function (data) {
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            })
+            return false;
+        });
+
+        //表单初始赋值
+        form.val('example', {
+            "username": "贤心" // "name": "value"
+            , "password": "123456"
+            , "interest": 1
+            , "like[write]": true //复选框选中状态
+            , "close": true //开关状态
+            , "sex": "女"
+            , "desc": "我爱 layui"
+        })
+
+
+    });
+        layui.use('upload', function () {
+            var $ = layui.jquery
+                , upload = layui.upload;
+            //多文件列表示例
+            var demoListView = $('#demoList')
+                , uploadListIns = upload.render({
+                    elem: '#testList'
+                    , url: '/api/upload'
+                    , accept: 'file'
+                    , multiple: true
+                    , auto: false
+                    , bindAction: '#testListAction'
+                    , choose: function (obj) {
+                        var files = this.files = obj.pushFile(); //将每次选择的文件追加到文件队列
+                        //读取本地文件
+                        obj.preview(function (index, file, result) {
+                            var tr = $(['<tr id="upload-' + index + '">'
+                                , '<td>' + file.name + '</td>'
+                                , '<td>' + (file.size / 1014).toFixed(1) + 'kb</td>'
+                                , '<td>等待上传</td>'
+                                , '<td>'
+                                , '<button class="layui-btn layui-btn-xs demo-reload layui-hide">重传</button>'
+                                , '<button class="layui-btn layui-btn-xs layui-btn-danger demo-delete">删除</button>'
+                                , '</td>'
+                                , '</tr>'].join(''));
+
+                            //单个重传
+                            tr.find('.demo-reload').on('click', function () {
+                                obj.upload(index, file);
+                            });
+
+                            //删除
+                            tr.find('.demo-delete').on('click', function () {
+                                delete files[index]; //删除对应的文件
+                                tr.remove();
+                                uploadListIns.config.elem.next()[0].value = ''; //清空 input file 值，以免删除后出现同名文件不可选
+                            });
+
+                            demoListView.append(tr);
+                        });
+                    }
+                    , done: function (res, index, upload) {
+                        if (res.code == 0) { //上传成功
+                            layer.alert('所有文件上传完毕！', {icon: 6});
+                            var tr = demoListView.find('tr#upload-' + index)
+                                , tds = tr.children();
+                            tds.eq(2).html('<span style="color: #5FB878;">上传成功</span>');
+                            tds.eq(3).html(''); //清空操作
+                            return delete this.files[index]; //删除文件队列已经上传成功的文件
+                        }
+                        this.error(index, upload);
+                    }
+                    , error: function (index, upload) {
+                        var tr = demoListView.find('tr#upload-' + index)
+                            , tds = tr.children();
+                        tds.eq(2).html('<span style="color: #FF5722;">上传失败</span>');
+                        tds.eq(3).find('.demo-reload').removeClass('layui-hide'); //显示重传
+                    }
+                });
+        });
+    </script>
+}
+

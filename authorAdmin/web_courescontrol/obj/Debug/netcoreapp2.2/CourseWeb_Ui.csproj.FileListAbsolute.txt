@@ -1,0 +1,118 @@
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.deps.json
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.runtimeconfig.json
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.runtimeconfig.dev.json
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.dll
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.pdb
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.Views.dll
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.Views.pdb
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseDomain.dll
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseDomain.pdb
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.csprojAssemblyReference.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.csproj.CoreCompileInputs.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorAssemblyInfo.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorAssemblyInfo.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.AssemblyInfoInputs.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.AssemblyInfo.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.TagHelpers.input.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.TagHelpers.output.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorCoreGenerate.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Home\changePwd.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Home\login.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_StudentLayout.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\index.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\ShowInfo.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Teacher\Index.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorTargetAssemblyInfo.cache
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorTargetAssemblyInfo.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.Views.pdb
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.csproj.CopyComplete
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.dll
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.pdb
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\UpdateInfo.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\ShowCourseInfo.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\Select.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\ChooseTongshi.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\changePwd.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\Choosezhuanyefangxiang.g.cshtml.cs
+D:\计算机课程\web应用开发 ASP.NET\CourseCon\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\Choosezhuanyejichu.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.deps.json
+D:\GitHub\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.runtimeconfig.json
+D:\GitHub\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.runtimeconfig.dev.json
+D:\GitHub\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.dll
+D:\GitHub\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.pdb
+D:\GitHub\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.Views.dll
+D:\GitHub\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.Views.pdb
+D:\GitHub\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseDomain.dll
+D:\GitHub\web_courescontrol\web_courescontrol\bin\Debug\netcoreapp2.2\CourseDomain.pdb
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.csprojAssemblyReference.cache
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.csproj.CoreCompileInputs.cache
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorAssemblyInfo.cache
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorAssemblyInfo.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.AssemblyInfoInputs.cache
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.AssemblyInfo.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.TagHelpers.input.cache
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.TagHelpers.output.cache
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorCoreGenerate.cache
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_StudentLayout.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\changePwd.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\ChooseTongshi.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\Choosezhuanyefangxiang.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\Choosezhuanyejichu.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\index.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\Select.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\ShowCourseInfo.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\ShowInfo.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Student\UpdateInfo.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Teacher\Index.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorTargetAssemblyInfo.cache
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorTargetAssemblyInfo.cs
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.Views.pdb
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.csproj.CopyComplete
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.dll
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.pdb
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.csprojAssemblyReference.cache
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.csproj.CoreCompileInputs.cache
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorAssemblyInfo.cache
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorAssemblyInfo.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.AssemblyInfoInputs.cache
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.AssemblyInfo.cs
+D:\GitHub\authorAdmin\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.deps.json
+D:\GitHub\authorAdmin\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.runtimeconfig.json
+D:\GitHub\authorAdmin\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.runtimeconfig.dev.json
+D:\GitHub\authorAdmin\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.dll
+D:\GitHub\authorAdmin\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.pdb
+D:\GitHub\authorAdmin\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.Views.dll
+D:\GitHub\authorAdmin\web_courescontrol\bin\Debug\netcoreapp2.2\CourseWeb_Ui.Views.pdb
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.TagHelpers.input.cache
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.TagHelpers.output.cache
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorCoreGenerate.cache
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorTargetAssemblyInfo.cache
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.RazorTargetAssemblyInfo.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.Views.pdb
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.dll
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.pdb
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\CourseWeb_Ui.csproj.CopyComplete
+D:\GitHub\authorAdmin\web_courescontrol\bin\Debug\netcoreapp2.2\author.dll
+D:\GitHub\authorAdmin\web_courescontrol\bin\Debug\netcoreapp2.2\author.pdb
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Author\changePwd.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Author\Index.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Author\ShowInfo.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Author\UpdateInfo.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_AuthorLayout.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Author\Upload.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Author\fee.g.cshtml.cs
+D:\GitHub\authorAdmin\web_courescontrol\obj\Debug\netcoreapp2.2\Razor\Views\Author\Contact.g.cshtml.cs
