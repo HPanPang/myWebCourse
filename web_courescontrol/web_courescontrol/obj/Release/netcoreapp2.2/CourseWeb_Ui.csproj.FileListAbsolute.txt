@@ -58,11 +58,8 @@ D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\CourseWe
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\CourseWeb_Ui.TagHelpers.input.cache
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\CourseWeb_Ui.TagHelpers.output.cache
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\CourseWeb_Ui.RazorCoreGenerate.cache
-D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\Razor\Views\Home\changePwd.g.cshtml.cs
-D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\Razor\Views\Home\login.g.cshtml.cs
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
-D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\Razor\Views\Shared\_StudentLayout.g.cshtml.cs
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\Razor\Views\Student\changePwd.g.cshtml.cs
@@ -82,3 +79,4 @@ D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\CourseWe
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\CourseWeb_Ui.csproj.CopyComplete
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\CourseWeb_Ui.dll
 D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\CourseWeb_Ui.pdb
+D:\GitHub\web_courescontrol\web_courescontrol\obj\Release\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
