@@ -30,7 +30,11 @@ namespace FirstView.Controllers
         {
             if ((temp == "author") && (authorService.LoginJudge(name, password)))
             {
-                HttpContext.Response.Cookies.Append("getCookie", name,new Microsoft.AspNetCore.Http.CookieOptions {Expires=DateTime.Now.AddMinutes(5) });
+                if (HttpContext.Request.Cookies.TryGetValue("getCookie", out _) == false)
+                {
+                    HttpContext.Response.Cookies.Append("getCookie", name);
+                }
+                
                 return Json(new
                 {
                     code =0,
@@ -40,7 +44,10 @@ namespace FirstView.Controllers
 
             if ((temp == "customer") && (customerService.LoginJudge(name, password)))
             {
-                HttpContext.Response.Cookies.Append("getCookie", name, new Microsoft.AspNetCore.Http.CookieOptions { Expires = DateTime.Now.AddMinutes(5) });
+                if (HttpContext.Request.Cookies.TryGetValue("getCookie", out _) == false)
+                {
+                    HttpContext.Response.Cookies.Append("getCookie", name);
+                }
                 return Json(new
                 {
                     code = 0,
