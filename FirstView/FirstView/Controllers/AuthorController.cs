@@ -65,8 +65,8 @@ namespace FirstView.Controllers
             {
                 return Redirect(Url.Action("Index", "Home"));
             }
-            var author = authorService.Query(getCookie);
-            return View(author);
+            var booklist = authorService.GetBookLists(getCookie);
+            return View(booklist);
         }
         public IActionResult Contact()
         {
@@ -77,7 +77,16 @@ namespace FirstView.Controllers
                 return Redirect(Url.Action("Index", "Home"));
             }
             var author = authorService.Query(getCookie);
-            return View(author);
+            if (author.IsContact == "0")
+            {
+                author.Address = "您还没有签订合同哦！";
+                return View(author);
+            }
+            else
+            {
+                return View(author);
+            }
+            
         }
         public IActionResult logout()
         {
@@ -132,6 +141,46 @@ namespace FirstView.Controllers
             }
             var author = authorService.Query(getCookie);
             return View(author);
+        }
+        public ActionResult CPwd(string oldPwd,string newPwd)
+        {
+            var getCookie = "";
+            HttpContext.Request.Cookies.TryGetValue("getCookie", out getCookie);
+            if (getCookie == null)
+            {
+                return Redirect(Url.Action("Index", "Home"));
+            }
+            var author = authorService.Query(getCookie);
+            if (oldPwd == newPwd)
+            {
+                return Json(new
+                {
+                    code = 222,//503表示旧密码输入错误，不能修改
+                    msg = "咦，新旧密码都是一样的哦！",
+                });
+            }
+            if (author.Password != oldPwd)
+            {
+                return Json(new
+                {
+                    code = 503,//503表示旧密码输入错误，不能修改
+                    msg = "旧密码似乎不对哦！请检查后输入！",
+                });
+            }
+            else if (author.Password == oldPwd)
+            {
+                author.Password = newPwd;
+                return Json(new
+                {
+                    code = 200,
+                    msg = "修改成功！",
+                });
+            }
+            return Json(new
+            {
+                code = 2050,
+                msg = "服务器异常！",
+            });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -15,6 +15,7 @@
     <link href="/author/css/lib/toastr/toastr.min.css" rel="stylesheet">
     <link rel="stylesheet" href="~/author/layui/css/layui.css" media="all">
     <link href="~/css/css-index.css" rel="stylesheet" media="screen">
+
 </head>
 
 <body data-spy="scroll" data-target="#navbar-scroll">
@@ -23,13 +24,19 @@
         <div class="overlay">
             <div class="container">
                 <div class="row">
+                    <div class="alert alert-warning alert-dismissible show text-center">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        我们将请求使用你的Cookie,如果无法正常登录，请检查设置是否允许使用Cookie！
+                    </div>
                     <div class="col-md-7">
                         <!-- /.logo -->
                         <div class="logo wow fadeInDown"></div>
                         <!-- /.main title -->
                         <h1 class="wow fadeInLeft">
                             西安建筑科技大学出版社
+
                         </h1>
+
                         <!-- /.header paragraph -->
                         <div class="landing-text wow fadeInUp">
                             <p>西安建筑科技大学出版社成立于1994年6月，是由西安建筑科技大学联合西安市政府发起的一家综合出版社。在市委，市政府的领导下，主要出版各类政治，经济，科技以及教育文化类图书。</p>
@@ -48,6 +55,7 @@
                                 @Html.AntiForgeryToken()
                                 <input type="hidden" name="u" value="503bdae81fde8612ff4944435">
                                 <input type="hidden" name="id" value="bfdba52708">
+
                                 <div class="form-group">
                                     <input class="form-control input-lg" name="name" id="name" type="text" placeholder="账号" required>
                                 </div>
@@ -63,6 +71,7 @@
                                 <div class="form-group">
                                     <input type="button" id="btn" class="btn btn-warning btn-lg" value="登录">
                                 </div>
+
                                 <div class="form-group last">
                                     <br />
                                 </div>
@@ -229,7 +238,7 @@
                     <img alt="client" src="~/images/client3.png" class="wow fadeInUp" data-wow-delay="0.4s">
                     <img alt="client" src="~/images/client4.png" class="wow fadeInUp" data-wow-delay="0.6s">
                 </div>
-                <div class="container col-sm-12 text-center wow fadeInUp"  data-wow-delay="0.8s">
+                <div class="container col-sm-12 text-center wow fadeInUp" data-wow-delay="0.8s">
                     <span id="hitokoto">:D 获取中...</span>
                 </div>
             </div>
@@ -316,26 +325,23 @@
             <div class="overlay">
                 <div class="container">
                     <div class="row contact-row">
-
                         <!-- /.address and contact -->
-                        <div class="col-sm-5 contact-left wow fadeInUp">
+                        <div class="col-sm-7 contact-left wow fadeInUp">
                             <h2><span class="highlight">联</span>系我们</h2>
                             <ul class="ul-address">
                                 <li>
                                     <i class="pe-7s-map-marker"></i><br>陕西省西安市西安建筑科技大学<br>鄠邑区草堂镇草堂校区<span class="highlight">710000</span>
-</li>
+                                </li>
                                 <li>
                                     <i class="pe-7s-phone"></i><br>17691174341
                                 </li>
                                 <li><i class="pe-7s-mail"></i><br><a href="xauatpress@xauat.com">xauatpress@xauat.com</a></li>
                                 <li><i class="pe-7s-look"></i><br><a href="#">www.hupangpang.xyz</a></li>
                             </ul>
-
                         </div>
-
                         <!-- /.contact form -->
-                        <div class="col-sm-7 contact-right">
-                            <form method="POST" id="contact-form" name="Register" class="form-horizontal" action='@Url.Action("RegisterJudge")' onsubmit="return check();">
+                        <div class="col-sm-4 contact-right">
+                            <form id="contact-form" name="Register" class="form-horizontal" action="#" method="post">
                                 <div style="visibility:hidden;text-align:center;" id="alert" name="alert" class="alert alert-danger">
 
                                 </div>
@@ -358,7 +364,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <input value="注册" class="btn btn-success wow fadeInUp" type="submit" />
+                                    <input value="注册" id="btn-register" class="btn btn-success wow fadeInUp" type="button" />
                                 </div>
                             </form>
                         </div>
@@ -404,18 +410,41 @@
                 dataType: "JSON",
                 success: function (data) {
                     if (data.code == 0 && data.type == "author") {
-                        layer.alert('登录成功，正在进入后台！', {icon: 6});
+                        layer.alert('登录成功，正在进入后台！', { icon: 6 });
                         window.location.href = '/Author';
                     }
                     if (data.code == 0 && data.type == "customer") {
-                        layer.alert('登录成功，正在进入后台！', {icon: 6});
+                        layer.alert('登录成功，正在进入后台！', { icon: 6 });
                         window.location.href = '/Customer';
                     }
                     if (data.code == 1) {
-                        layer.msg('密码输入错误。。', {icon: 5});
+                        layer.msg('密码输入错误。。', { icon: 5 });
                     }
-                    
 
+
+                }
+            })
+        })
+        $("#btn-register").click(function () {
+            var Registerid = $("#Registerid").val();
+            var firstpassword = $("#firstpassword").val();
+            var phone = $("#phone").val();
+            var type = $("#type").val();
+            $.ajax({
+                url: '/Home/RegisterJudge',
+                data: { Registerid: Registerid, firstpassword: firstpassword, phone: phone, type: type },
+                type: "POST",
+                dataType: "JSON",
+                success: function (data) {
+                    if (data.code == 200 && data.msg != null) {
+                        layer.alert(data.msg, { icon: 6 });
+                    }
+                    if (data.code == 143 && data.msg != null) {
+                        layer.msg(data.msg, { icon: 5 });
+                    }
+                    if (data.code == 2050) {
+                        layer.msg(data.msg, { icon: 5 });
+                    }
                 }
             })
         })

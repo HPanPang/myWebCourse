@@ -61,20 +61,40 @@ namespace FirstView.Controllers
             });
         }
 
-        public IActionResult RegisterJudge(string Registerid, string firstpassword, string phone, string type)
+        public ActionResult RegisterJudge(string Registerid, string firstpassword, string phone, string type)
         {
-            int temp = 2050;
+            if (authorService.Query(Registerid) != null||customerService.Query(Registerid)!=null)
+            {
+                return Json(new
+                {
+                    code=143,//143代表账号已存在
+                    msg = "您的账号已经存在，请重新输入！",
+                });
+            }
             if ((type == "author") && (authorService.RegisterJudge(Registerid, firstpassword, phone)))
             {
-                return Redirect(Url.Action("Index", temp));
+                
+                return Json(new
+                {
+                    code = 200,
+                    msg = "欢迎您,"+ Registerid,
+                });
             }
 
             if ((type == "customer") && (customerService.RegisterJudge(Registerid, firstpassword, phone)))
             {
 
-                return Redirect(Url.Action("Index", temp));
+                return Json(new
+                {
+                    code = 200,
+                    msg = "欢迎您," + Registerid,
+                });
             }
-            return Redirect(Url.Action("Index"));
+            return Json(new
+            {
+                code=2050,
+                msg = "服务器异常！",
+            });
         }
 
 

@@ -1,8 +1,9 @@
 ﻿@{
     Layout = "_AuthorLayout";
     ViewData["Title"] = "稿费查询";
-        var author = Model;
-    ViewData["Name"] = author.Name;
+    var author = Model;
+    ViewData["Name"] = author[0].AuthorName;
+;
 }
 
     <div class="row">
@@ -26,27 +27,36 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Kolor Tea Shirt For Man</td>
-                                    <td><span class="badge badge-primary">Sale</span></td>
-                                    <td>January 22</td>
-                                    <td class="color-primary">$21.56</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Kolor Tea Shirt For Women</td>
-                                    <td><span class="badge badge-success">Tax</span></td>
-                                    <td>January 30</td>
-                                    <td class="color-success">$55.32</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Blue Backpack For Baby</td>
-                                    <td><span class="badge badge-danger">Extended</span></td>
-                                    <td>January 25</td>
-                                    <td class="color-danger">$14.85</td>
-                                </tr>
+                                @if(author[0].Num==null){
+
+                                }
+                                else{ 
+                                    for(int i = 0; i < author.Count-1; i++)
+                                    {
+                                        <tr>
+                                            <th scope="row">@author[i].Num</th>
+                                            <td>@author[i].Name</td>
+                                            @if (author[i].Statu == "等待续签合同")
+                                            {
+                                                <td><span class="badge badge-primary">@author[i].Statu</span></td>
+                                            }
+                                            @if (author[i].Statu == "热销中")
+                                            {
+                                                <td><span class="badge badge-success">@author[i].Statu</span></td>
+                                            }
+                                            @if (author[i].Statu == "备货中")
+                                            {
+                                                <td><span class="badge badge-danger">@author[i].Statu</span></td>
+                                            }
+                                            
+                                            <td>@author[i].PublishDate</td>
+                                            <td>@author[i].Price</td>
+                                            <td>@author[i].CountSale</td>
+                                            <td>@author[i].Fee</td>
+                                        </tr>
+
+                                    }
+                                }
                             </tbody>
                         </table>
                     </div>

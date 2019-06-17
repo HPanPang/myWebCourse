@@ -51,5 +51,28 @@ namespace PublishingHouse.Infrastructure
             }
             return author;
         }
+        public Book QueryBook(string id)
+        {
+            Book book = null;
+            using (var context = new pressmannersystemContext())
+            {
+                book = context.Book.FirstOrDefault(x => x.Id == id);
+                context.SaveChanges();
+            }
+            return book;
+        }
+        public List<Bookauthor> QueryBookDetil(string id)
+        {
+            List<Bookauthor> listBook = new List<Bookauthor>();
+            using (var context = new pressmannersystemContext())
+            {
+                listBook = (from u in context.Bookauthor
+                            where u.Aid == id
+                             select u
+                             ).ToList();
+                context.SaveChanges();
+            }
+            return listBook;
+        }
     }
 }

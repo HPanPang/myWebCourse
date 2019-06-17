@@ -5,6 +5,7 @@
     ViewData["Name"] = author.Name;
 }
 <!-- Main wrapper  -->
+<link rel="stylesheet" href="~/author/layui/css/layui.css" media="all">
 
 <div id="main-wrapper">
     <div class="unix-login">
@@ -14,7 +15,7 @@
                     <div class="login-content card">
                         <div class="login-form">
                             <h4>修改密码</h4>
-                            <form action='@Url.Action("JudgePwd")' method="post">
+                            <form id="changePWD" action='#")' method="post">
                                 <div class="form-group">
                                     <label>用户ID</label>
                                     <input name="id" type="text" class="form-control" value="@author.Id" readonly="readonly" onClick="{this.value='@author.Id'}">
@@ -28,7 +29,7 @@
                                     <input name="newPwd" type="password" class="form-control" placeholder="请输入新密码">
                                 </div>
                                 <div class="button-list">
-                                    <button type="submit" class="btn btn-primary btn-rounded m-b-10 m-l-5">确认修改</button>
+                                    <input type="button" id="btn-nnnn" class="btn btn-primary btn-rounded m-b-10 m-l-5" value="确认修改" />
                                     <button type="reset" class="btn btn-info btn-rounded m-b-10 m-l-5">重置</button>
                                 </div>
                             </form>
@@ -40,7 +41,36 @@
     </div>
 </div>
 @section Scripts{
+    <script type="text/javascript">
+        $("#btn-nnnn").click(function () {
+            var oldPwd = $("#oldPwd").val();
+            var newPwd = $("#newPwd").val();
 
+            $.ajax({
+                url: '/Author/CPwd',
+                data: { oldPwd: oldPwd, newPwd: newPwd },
+                type: "POST",
+                dataType: "JSON",
+                success: function (data) {
+                    if (data.code == 200 && data.msg != null) {
+                        layer.alert(data.msg, { icon: 6 });
+                    }
+                    if (data.code == 503 && data.msg != null) {
+                        layer.msg(data.msg, { icon: 5 });
+                    }
+                    if (data.code == 2050 && data.msg != null) {
+                        layer.msg(data.msg, { icon: 5 });
+                    }
+                    if (data.code == 222 && data.msg != null) {
+                        layer.msg(data.msg, { icon: 5 });
+                    }
+
+
+                }
+            })
+        })
+    </script>
+    <script src="~/author/layui/layui.all.js" charset="utf-8"></script>
     <script src="~/js/lib/sweetalert/sweetalert.min.js"></script>
     <script src="~/js/lib/sweetalert/sweetalert.init.js"></script>
 }
